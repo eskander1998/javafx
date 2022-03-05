@@ -20,9 +20,10 @@ public interface seance {
     
 
 
-    //select
+    public void ajouterseance(Class_Seance s) ;  
     public ObservableList<Class_Seance> afficher_Seance();
-    
+     public void DeleteClasse(int a) ;
+    public void modifierseance(Class_Seance s) ;  
      
 }
 

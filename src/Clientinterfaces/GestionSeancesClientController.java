@@ -148,7 +148,11 @@ public class GestionSeancesClientController implements Initializable {
     }
 
     @FXML
-    private void gotoback(MouseEvent event) {
+    private void gotoback(MouseEvent event) throws IOException {
+          FXMLLoader loader = new FXMLLoader(getClass().getResource("/Backinterfaces/SalleCRUD.fxml"));
+  
+            Parent root = loader.load();
+            btngoback.getScene().setRoot(root);   
     }
 
     @FXML

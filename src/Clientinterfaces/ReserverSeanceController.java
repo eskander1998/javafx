@@ -57,11 +57,11 @@ public class ReserverSeanceController implements Initializable {
     @FXML
     private JFXButton btngoback;
     @FXML
-    private JFXButton btngestionSeances;
-    @FXML
     private JFXButton btnEvent;
     @FXML
-    private JFXButton btnGoToSeances;
+    private JFXButton btngoGestionSeance;
+    @FXML
+    private JFXButton btngoSeance;
 
     public void setNomSeanceLbale(String nomSeanceLbale) {
         this.nomSeanceLbale .setText( nomSeanceLbale);
@@ -147,12 +147,21 @@ public class ReserverSeanceController implements Initializable {
                       }
 
     @FXML
-    private void gotoseance(MouseEvent event) throws IOException {
+    private void goGestionSeance(MouseEvent event)throws IOException {
+          FXMLLoader loader = new FXMLLoader(getClass().getResource("GestionSeancesClient.fxml"));
+  
+            Parent root = loader.load();
+            btngoGestionSeance.getScene().setRoot(root);   
+    }
+    @FXML
+    private void goSeance(MouseEvent event) throws IOException {
           FXMLLoader loader = new FXMLLoader(getClass().getResource("AfficherSeanceClient.fxml"));
   
             Parent root = loader.load();
-            btnGoToSeances.getScene().setRoot(root);   
+            btngoSeance.getScene().setRoot(root);   
     }
+
+
                       
     }
     

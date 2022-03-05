@@ -18,7 +18,7 @@ import javafx.stage.Stage;
  */
 public class Workout2 extends Application {
     
-    @Override
+    @Override  ///Clientinterfaces/AfficherSeanceClient.fxml
     public void start(Stage stage){
         try{Parent root = FXMLLoader.load(getClass().getResource("/Clientinterfaces/AfficherSeanceClient.fxml"));
         

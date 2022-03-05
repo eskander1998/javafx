@@ -241,7 +241,7 @@ grid.setGridLinesVisible(false);
                 ItemClassSeanceController ItemClassSeanceController = fxmlLoader.getController();
                 ItemClassSeanceController.setData(seancess.get(i),myListener);
 
-                if (column == 2) {
+                if (column == 3) {
                     column = 0;
                     row++;
                 }
@@ -274,7 +274,11 @@ grid.setGridLinesVisible(false);
     }
 
     @FXML
-    private void gotoback(MouseEvent event) {
+    private void gotoback(MouseEvent event)throws IOException {
+          FXMLLoader loader = new FXMLLoader(getClass().getResource("/Backinterfaces/SalleCRUD.fxml"));
+  
+            Parent root = loader.load();
+            btngoback.getScene().setRoot(root);   
     }
 
     @FXML
@@ -284,5 +288,4 @@ grid.setGridLinesVisible(false);
             Parent root = loader.load();
             btngestionSeances.getScene().setRoot(root);   
     }
-    
 }
