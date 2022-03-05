@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMousePressed="#click" prefHeight="378.0" prefWidth="491.0" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Clientinterfaces.ItemReservationController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="378.0" prefWidth="484.0">
+         <children>
+            <HBox prefHeight="302.0" prefWidth="329.0">
+               <children>
+                  <Pane prefHeight="313.0" prefWidth="508.0">
+                     <children>
+                        <Label fx:id="lieuLable" layoutX="141.0" layoutY="50.0" prefHeight="31.0" prefWidth="46.0" text="lieu">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLabel" layoutX="135.0" prefHeight="49.0" prefWidth="215.0" text="Cherry" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Cambria Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img" fitHeight="115.0" fitWidth="180.0" layoutX="46.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../CRUD/FruitMarket/src/img/cherry.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="86.0" layoutY="50.0" prefHeight="31.0" prefWidth="78.0" text="Salle :">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="216.0" prefHeight="31.0" prefWidth="60.0" text="Date :" textFill="#b95c34">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateSeance" layoutX="93.0" layoutY="216.0" prefHeight="31.0" prefWidth="140.0" text="date" textFill="#b95c34">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="247.0" prefHeight="31.0" prefWidth="138.0" text="Cette seance est " textFill="#861818">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="etatLabel" layoutX="184.0" layoutY="247.0" prefHeight="31.0" prefWidth="97.0" text="etat" textFill="#861818">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="212.0" layoutY="50.0" prefHeight="31.0" prefWidth="78.0" text="Coach :">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="coachLabel" layoutX="290.0" layoutY="50.0" prefHeight="31.0" prefWidth="46.0" text="lieu">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="247.0" layoutY="216.0" prefHeight="31.0" prefWidth="22.0" text="à" textFill="#b95c34">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="heureSeance" layoutX="279.0" layoutY="216.0" prefHeight="31.0" prefWidth="60.0" text="heure" textFill="#b95c34">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="idLabel" text="id" textFill="#fffdfd" />
+                  <Label fx:id="idReservation" prefHeight="17.0" prefWidth="316.0" text="idReservation" />
+                  <Label fx:id="heureLabel" text="heure" textFill="#fffdfd" />
+                  <Label fx:id="coachLabel" text="coach" textFill="#fffdfd" />
+                  <Label fx:id="capaciteLabel" text="capacite" textFill="#fffdfd" />
+                  <Label fx:id="nbreservationLabel" text="nbreservation" textFill="#fffdfd" />
+                  <Label fx:id="imageLabel" text="image" textFill="#fffdfd" />
+                  <Label fx:id="idsalleLabel" text="idsalle" textFill="#fffdfd" />
+               </children>
+            </HBox>
+            <Button fx:id="btnAnnuler" mnemonicParsing="false" onMouseClicked="#AnnulerRes" prefHeight="28.0" prefWidth="140.0" styleClass="add-btn" stylesheets="@../css/style.css" text="Annuler la réservation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
